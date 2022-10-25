@@ -1,0 +1,134 @@
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
+
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Press Start 2P", cursive;
+  background: radial-gradient(
+      circle,
+      transparent 20%,
+      #ff99d7 20%,
+      #ff99d7 80%,
+      transparent 80%,
+      transparent
+    ),
+    radial-gradient(
+        circle,
+        transparent 20%,
+        #ff99d7 20%,
+        #ff99d7 80%,
+        transparent 80%,
+        transparent
+      )
+      50px 50px,
+    linear-gradient(#d58bdd 8px, transparent 8px) 0 -4px,
+    linear-gradient(90deg, #d58bdd 8px, transparent 8px) -4px 0;
+  background-color: #ff99d7;
+  background-size: 100px 100px, 100px 100px, 50px 50px, 50px 50px;
+}
+
+.wrapper {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.endScreen {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #d58bddcc;
+  z-index: 10;
+  color: bisque;
+  font-size: 2.7rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navbar {
+  padding: 0.5em 1.3em;
+  display: flex;
+  align-items: center;
+  gap: 0.6em;
+  background-color: #905e96;
+  color: bisque;
+  box-shadow: 0px 1px 4px #333;
+}
+
+.navbar img {
+  height: 35px;
+}
+
+.board {
+  margin: 5rem auto;
+  max-width: 450px;
+  display: grid;
+  grid-gap: 0.3em;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.board--cell {
+  width: 150px;
+  height: 150px;
+  border: 2px solid bisque;
+  border-radius: 10px;
+}
+
+.footer {
+  padding: 0.5em 1.3em;
+}
+
+.footer--names {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer--names input {
+  margin-top: 1.2rem;
+  font-family: "Press Start 2P", cursive;
+  width: 33%;
+  height: 2.4rem;
+  padding-left: 0.6em;
+  border-radius: 10px;
+  border: none;
+}
+
+.footer button {
+  font-family: "Press Start 2P", cursive;
+  width: 18%;
+  height: 2.4rem;
+  border-radius: 15px;
+  border: none;
+  box-shadow: 1px 3px 6px gray;
+  background-color: #905e96;
+  color: bisque;
+  font-weight: bold;
+}
+
+.footer button:hover {
+  transform: scale(0.95);
+}
+
+.footer--names input,
+.footer button:focus {
+  outline: none;
+}
+
+.footer button:active {
+  transform: scale(1.03);
+}
+
+.footer small {
+  font-family: Arial, Helvetica, sans-serif;
+  display: inline-block;
+  margin-block: 1.3rem 1rem;
+  float: right;
+  color: bisque;
+}
